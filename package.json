@@ -5,7 +5,9 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app"
+    "setup-project":"npm install",
+    "dev": "nodemon app",
+    "watch": "node --watch app"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +15,11 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "http-status-codes": "^2.3.0"
+    "http-status-codes": "^2.3.0",
+    "mongoose": "^8.11.0"
   },
   "devDependencies": {
-    "@types/express": "^5.0.0"
+    "@types/express": "^5.0.0",
+    "morgan": "^1.10.0"
   }
 }
